@@ -6,7 +6,9 @@
 
 //   Method 01
 
-/* const isAnagram = (s, t) => {
+/* const isAnagram = (str, test) => {
+  let s = str.toLowerCase();
+  let t = test.toLowerCase();
   const str1 = s.split("").sort().join("").toLowerCase();
   const str2 = t.split("").sort().join("").toLowerCase();
   return str1 !== str2 ? false : true;
@@ -14,7 +16,9 @@
 
 //  Method  02
 
-const isAnagram = (s, t) => {
+const isAnagram = (str, test) => {
+  let s = str.toLowerCase();
+  let t = test.toLowerCase();
   s.length !== t.length && false;
   let count = {};
   for (let i = 0; i < s.length; i++) {
@@ -30,3 +34,4 @@ const isAnagram = (s, t) => {
 };
 console.log(isAnagram("abcd", "cadb"));
 console.log(isAnagram("abcd", "cadub"));
+console.log(isAnagram("Buckethead", "DeathCubeK"));
